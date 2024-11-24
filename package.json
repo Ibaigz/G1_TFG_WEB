@@ -4,5 +4,8 @@
   },
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "tw-elements": "^2.0.0"
   }
 }

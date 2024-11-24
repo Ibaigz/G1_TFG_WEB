@@ -1,0 +1,23 @@
+ /* Animación de aparición */
+ .card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* MENU */
+/* Estilo para el enlace activo */
+li.active {
+    color: #116682; /* Azul para el enlace activo */
+    font-weight: bold; /* Negrita para el enlace activo */
+    border-bottom: 2px solid #116682; /* Línea debajo del enlace activo */
+  }
+  
+  /* Estilos para los enlaces cuando no están activos (por defecto) */
+  li {
+    color: black; /* Color por defecto */
+  }
