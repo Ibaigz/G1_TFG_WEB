@@ -1,23 +1,31 @@
- /* Animación de aparición */
- .card {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 2s ease, transform 2s ease;
-  }
+/* Animación de aparición */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 0.5s ease;
+}
 
-  .card.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación de hover */
+.card:hover {
+  transform: translateY(0) scale(1.1); /* Escalado al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al hover */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transición más rápida en hover */
+}
+
 /* MENU */
 /* Estilo para el enlace activo */
 li.active {
-    color: #116682; /* Azul para el enlace activo */
-    font-weight: bold; /* Negrita para el enlace activo */
-    border-bottom: 2px solid #116682; /* Línea debajo del enlace activo */
-  }
-  
-  /* Estilos para los enlaces cuando no están activos (por defecto) */
-  li {
-    color: black; /* Color por defecto */
-  }
+  color: #116682; /* Azul para el enlace activo */
+  font-weight: bold; /* Negrita para el enlace activo */
+  border-bottom: 2px solid #116682; /* Línea debajo del enlace activo */
+}
+
+/* Estilos para los enlaces cuando no están activos (por defecto) */
+li {
+  color: black; /* Color por defecto */
+}
