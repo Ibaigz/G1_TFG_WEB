@@ -23,7 +23,7 @@
       <nav class="nav font-semibold text-lg">
         <ul class="flex items-center">
           <li
-            class="p-4 border-b-2 border-[#116682] border-opacity-0 hover:border-opacity-100 hover:text-[#116682] duration-200 cursor-pointer active"
+            class="p-4 border-b-2 border-[#116682] border-opacity-0 hover:border-opacity-100 hover:text-[#116682] duration-200 cursor-pointer "
             id="inicio"
           >
             <a href="index.html" class="">Inicio</a>
@@ -39,10 +39,10 @@
             <a href="./about.html">Equipo</a>
           </li>
           <li
-            class="p-4 border-b-2 border-[#116682] border-opacity-0 hover:border-opacity-100 hover:text-[#116682] duration-200 cursor-pointer"
+            class="p-4 border-b-2 border-[#116682] border-opacity-0 hover:border-opacity-100 hover:text-[#116682] duration-200 cursor-pointer active"
           >
-            <a href="./presupuestos.html">Documentación</a>
-          </li>
+          <a href="./presupuestos.html">Documentación</a>
+        </li>
         </ul>
       </nav>
 
@@ -70,94 +70,167 @@
       </div>
     </header>
 
-    <main
-      class="flex flex-col items-center justify-center w-auto pt-8 mr-56 ml-56"
-    >
-      <section>
-        <img class="w-full" src="images/artziniega (1).jpg" alt="phone" />
-      </section>
-      <section class="text-center max-w-4xl pt-[5%] mr-10 ml-10">
-        <h1 class="text-5xl font-bold">Explora Artziniega</h1>
-        <p class="text-center text-lg pt-5">
-          Una app educativa e interactiva diseñada para estudiantes de primaria,
-          que convierte la historia y el patrimonio de Artziniega en una
-          aventura colaborativa llena de minijuegos, cuentos animados y desafíos
-          GPS. ¡Aprender nunca fue tan divertido!
-        </p>
-      </section>
-      <!-- TARJETAS -->
-      <section class="flex items-center justify-center pt-[5%]">
-        <h1 class="text-4xl font-bold text-center">LA APLICACIÓN</h1>
-      </section>
+    <main class="mr-56 ml-56  pt-20">
+      <h1 class="text-5xl font-bold pb-5 flex flex-col items-center justify-center">Presupuestos</h1>
+      <div class="container">
+    
+        <ul class="timeline">
+          <!-- Primer elemento -->
+          <li class="flex flex-col items-end text-right">
+            <h3 class="font-bold text-left w-full bg-[#116682] text-white p-2 rounded-md">Desarrolladores</h3>
+            <table class="text-right border-collapse border border-gray-400 mt-4">
+              <tr>
+                <th class="border border-gray-400 px-4 py-2">Nombre</th>
+                <th class="border border-gray-400 px-4 py-2">Precio/h</th>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Ibai (D1)</td>
+                <td class="border border-gray-400 px-4 py-2">10€/h</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Ander (D2)</td>
+                <td class="border border-gray-400 px-4 py-2">10€/h</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Naoufal (D3)</td>
+                <td class="border border-gray-400 px-4 py-2">10€/h</td>
+              </tr>
+            </table>
+          </li>
+    
+          <li>
+            <h3 class="font-bold text-right w-full bg-[#166B54] text-white p-2 rounded-md">Material amortizable</h3>
+            <table class="text-right border-collapse border border-gray-400 mt-4">
+              <tr>
+                <th class="border border-gray-400 px-4 py-2">Descripción</th>
+                <th class="border border-gray-400 px-4 py-2">Precio</th>
+                <th class="border border-gray-400 px-4 py-2">Costo mensual</th>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Portatil ACER x 3</td>
+                <td class="border border-gray-400 px-4 py-2">XYZ</td>
+                <td class="border border-gray-400 px-4 py-2">XYZ / 4</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Ratón</td>
+                <td class="border border-gray-400 px-4 py-2">XYZ</td>
+                <td class="border border-gray-400 px-4 py-2">XYZ / 4 </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Smartphones x 2</td>
+                <td class="border border-gray-400 px-4 py-2">XYZ</td>
+                <td class="border border-gray-400 px-4 py-2">XYZ / 4 * 2</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Tablet Lenovo</td>
+                <td class="border border-gray-400 px-4 py-2">XYZ</td>
+                <td class="border border-gray-400 px-4 py-2">XYZ / 4</td>
+              </tr>
+            </table>
+          </li>
+          <li class="flex flex-col items-end text-right" >
+            <h3 class="font-bold text-left w-full bg-[#85619c] text-white p-2 rounded-md">Material fungible</h3>
+            <table class="text-right border-collapse border border-gray-400 mt-4">
+              <tr>
+                <th class="border border-gray-400 px-4 py-2">Descripción</th>
+                 <th class="border border-gray-400 px-4 py-2">Precio</th>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Desplazamiento</td>
+                <td class="border border-gray-400 px-4 py-2">32€/Mes</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Conexión internet</td>
+                <td class="border border-gray-400 px-4 py-2">15€/Mes</td>
+              </tr>
+            </table>
+           </li>
 
-      <div class="flex flex-row gap-6 items-start p-6 pt-10">
-        <a href="./analisis.html">
-              <div
-                class="card w-72 bg-[#e8fff6] rounded-lg shadow-lg "id="card1">
-                <div class="bg-[#166B54] text-white text-xl font-bold p-3 rounded-t-lg text-center">
-                  VALORACIÓN
-                </div>
-                <p class="text-center text-lg p-3 pt-4">
-                  Desarrollar una app educativa que enseñe la historia y patrimonio de 
-                  Artziniega de manera interactiva y colaborativa, adaptada a estudiantes de primaria.
-                </p>
-              </div>
-        </a>
+           <li class="flex flex-col items-start text-right" >
+            <h3 class="font-bold text-right w-full bg-[#8C4A5E] text-white p-2 rounded-md">Resumen Salario</h3>
+            <table class="text-right border-collapse border border-gray-400 mt-4">
+              <tr>
+                <th class="border border-gray-400 px-4 py-2">Desarrollador</th>
+                 <th class="border border-gray-400 px-4 py-2">Horas</th>
+                 <th class="border border-gray-400 px-4 py-2">Precio total</th>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">D1</td>
+                <td class="border border-gray-400 px-4 py-2">50/h</td>
+                <td class="border border-gray-400 px-4 py-2">500€</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">D2</td>
+                <td class="border border-gray-400 px-4 py-2">50/h</td>
+                <td class="border border-gray-400 px-4 py-2">500€</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">D3</td>
+                <td class="border border-gray-400 px-4 py-2">50/h</td>
+                <td class="border border-gray-400 px-4 py-2">500€</td>
+              </tr>
+            </table>
+            <p class="pt-4">El coste total de los desarrolladores es de: </p>
 
-        <a href="./definicion.html">
-          <div
-            class="card w-72 rounded-lg shadow-lg bg-[#ffeff3] opacity-0 transform transition-all duration-700 flex flex-col"
-            id="card2"
-          >
-            <div
-              class="bg-[#8C4A5E] text-white text-xl font-bold p-3 rounded-t-lg text-center"
-            >
-              DEFINICIÓN
-            </div>
-            <p class="text-center text-lg p-3 pt-4">
-              Orientada a estudiantes de primaria, proporcionando una
-              herramienta educativa para conocer la historia de Artziniega de
-              manera divertida.
-            </p>
-          </div>
-        </a>
+           </li>
 
-        <a href="./prototipo.html">
-        <div
-          class="card w-72 bg-[#dbf3ff] rounded-lg shadow-lg opacity-0 transform transition-all duration-700 flex flex-col"
-          id="card3"
-        >
-          <div
-            class="bg-[#116682] text-white text-xl font-bold p-3 rounded-t-lg text-center"
-          >
-            PROTOTIPO
-          </div>
-          <p class="text-center text-lg p-3 pt-4">
-            Evaluar la usabilidad y funcionalidad de la app antes 
-            de su desarrollo completo mediante prototipos de distintas fidelidades.
+           <li class="flex flex-col items-end text-right" >
+            <h3 class="font-bold text-left w-full bg-[#116682] text-white p-2 rounded-md">Resumen Material</h3>
+            <table class="text-right border-collapse border border-gray-400 mt-4">
+              <tr>
+                <th class="border border-gray-400 px-4 py-2">Material</th>
+                 <th class="border border-gray-400 px-4 py-2">Meses</th>
+                 <th class="border border-gray-400 px-4 py-2">Unidades</th>
+                 <th class="border border-gray-400 px-4 py-2">Precio mensual</th>
+                 <th class="border border-gray-400 px-4 py-2">Precio total</th>
 
-          </p>
-        </div>
-      </a>
-        <a href="./objetivos.html">
-          <div
-            class="card w-72 bg-[#f6e5ff] rounded-lg shadow-lg hover:scale-200 transform transition-transform duration-500 flex flex-col"
-            id="card4"
-          >
-            <div
-              class="bg-[#85619c] text-white text-xl font-bold p-3 rounded-t-lg text-center"
-            >
-              OBJETIVOS
-            </div>
-            <p class="text-center text-lg pt-4 p-3">
-              La app tendrá un diseño accesible y atractivo para niños de 6 a 12
-              años, con elementos multimedia como imágenes y audio para mejorar
-              el aprendizaje.
-            </p>
-          </div>
-        </a>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Portail Lenovo</td>
+                <td class="border border-gray-400 px-4 py-2">4</td>
+                <td class="border border-gray-400 px-4 py-2">3</td>
+
+                <td class="border border-gray-400 px-4 py-2">el precio no se cual es entre los meses</td>
+                <td class="border border-gray-400 px-4 py-2">el precio que no se x 3</td>
+
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Ratones</td>
+                <td class="border border-gray-400 px-4 py-2">4</td>
+                <td class="border border-gray-400 px-4 py-2">3</td>
+
+                <td class="border border-gray-400 px-4 py-2">el precio no se cual es entre los meses</td>
+                <td class="border border-gray-400 px-4 py-2">el precio que no se x 3</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Desplazamientos</td>
+                <td class="border border-gray-400 px-4 py-2">4</td>
+                <td class="border border-gray-400 px-4 py-2">3</td>
+
+                <td class="border border-gray-400 px-4 py-2">20€</td>
+                <td class="border border-gray-400 px-4 py-2">240€</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-400 px-4 py-2">Conexión internet</td>
+                <td class="border border-gray-400 px-4 py-2">4</td>
+                <td class="border border-gray-400 px-4 py-2">3</td>
+
+                <td class="border border-gray-400 px-4 py-2">15€</td>
+                <td class="border border-gray-400 px-4 py-2">180€</td>
+              </tr>
+              
+            </table>
+            <p class="pt-4">El coste total del material es de: </p>
+           </li>
+           
+        </ul>
+    
       </div>
     </main>
+    
+
+    <script src="./timeline.js"></script>
+
     <footer>
       <section class="bg-white pt-10">
         <hr class="" />
